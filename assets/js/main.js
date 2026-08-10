@@ -8,32 +8,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menuToggle');
   const menuClose = document.getElementById('menuClose');
   const menuOverlay = document.getElementById('menuOverlay');
-  const menuBackdrop = document.getElementById('menuBackdrop');
   const menuLinks = document.querySelectorAll('.menu-nav-link, .menu-footer-link');
 
   // Toggle Menu Functionality
+  let closeTimer;
+
   function openMenu() {
     if (!menuOverlay) return;
+    clearTimeout(closeTimer);
+    document.body.style.overflow = 'hidden';
     menuOverlay.classList.add('is-active');
     menuOverlay.setAttribute('aria-hidden', 'false');
-    if (menuBackdrop) {
-      menuBackdrop.classList.add('is-active');
-      menuBackdrop.setAttribute('aria-hidden', 'false');
-    }
     if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
   }
 
   function closeMenu() {
     if (!menuOverlay) return;
     menuOverlay.classList.remove('is-active');
     menuOverlay.setAttribute('aria-hidden', 'true');
-    if (menuBackdrop) {
-      menuBackdrop.classList.remove('is-active');
-      menuBackdrop.setAttribute('aria-hidden', 'true');
-    }
     if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
+
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(() => {
+      document.body.style.overflow = '';
+    }, 500);
   }
 
   if (menuToggle) {
@@ -42,10 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (menuClose) {
     menuClose.addEventListener('click', closeMenu);
-  }
-
-  if (menuBackdrop) {
-    menuBackdrop.addEventListener('click', closeMenu);
   }
 
   // Close menu on link click

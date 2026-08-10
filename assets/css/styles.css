@@ -176,26 +176,7 @@ a:hover {
   color: var(--color-oxblood);
 }
 
-/* Fullscreen Menu Backdrop & Drawer — Magazine Contents Page */
-.menu-backdrop {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100dvh;
-  background-color: rgba(28, 27, 26, 0.45);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  z-index: 1999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--duration-paper) var(--ease-paper);
-}
-
-.menu-backdrop.is-active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
+/* Fullscreen Menu Overlay — Tactile Magazine Bookmark Insert & 3D Flip */
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -203,35 +184,81 @@ a:hover {
   height: 100dvh;
   background-color: var(--bg-paper);
   z-index: 2000;
-  transform: translateY(-100%);
-  transition: transform var(--duration-paper) var(--ease-paper);
-  box-shadow: 0 20px 50px rgba(28, 27, 26, 0.25), 0 4px 16px rgba(28, 27, 26, 0.12);
-  border-bottom: 1px solid var(--color-hairline);
+  transform-origin: 100% 50%;
+  transform: perspective(1400px) rotateY(90deg);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.5s var(--ease-paper),
+              opacity 0.35s ease,
+              visibility 0.5s step-end;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: var(--grid-padding);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: -12px 0 40px rgba(28, 27, 26, 0.1), -2px 0 6px rgba(28, 27, 26, 0.05);
+  border-left: 1px solid var(--color-hairline);
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
 .menu-overlay.is-active {
-  transform: translateY(0);
+  transform: perspective(1400px) rotateY(0deg);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: transform 0.5s var(--ease-paper),
+              opacity 0.3s ease,
+              visibility 0s step-start;
 }
 
+/* Staggered Editorial Ink Reveal on Page Unfold */
+.menu-overlay .menu-nav-item,
+.menu-overlay .menu-language-switcher {
+  opacity: 0;
+  transform: translateX(16px);
+  transition: opacity 0.4s ease, transform 0.45s var(--ease-paper);
+}
+
+.menu-overlay.is-active .menu-nav-item,
+.menu-overlay.is-active .menu-language-switcher {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-overlay.is-active .menu-nav-item:nth-child(1) { transition-delay: 0.12s; }
+.menu-overlay.is-active .menu-nav-item:nth-child(2) { transition-delay: 0.16s; }
+.menu-overlay.is-active .menu-nav-item:nth-child(3) { transition-delay: 0.20s; }
+.menu-overlay.is-active .menu-nav-item:nth-child(4) { transition-delay: 0.24s; }
+.menu-overlay.is-active .menu-nav-item:nth-child(5) { transition-delay: 0.28s; }
+.menu-overlay.is-active .menu-language-switcher   { transition-delay: 0.32s; }
+
+/* Sticky Top Menu Header — Brand & Close Button Permanent Anchor */
 .menu-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  flex-shrink: 0;
+  height: 56px;
+  background-color: var(--bg-paper);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 52px;
+  padding: 0 var(--grid-padding);
   border-bottom: 1px solid var(--color-hairline);
 }
 
 .menu-body {
-  margin: 3rem 0;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 2.5rem var(--grid-padding);
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .menu-section-title {
@@ -275,17 +302,6 @@ a:hover {
 
 .menu-nav-link:hover {
   color: var(--color-oxblood);
-}
-
-.menu-footer {
-  border-top: 1px solid var(--color-hairline-light);
-  padding-top: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--font-mono);
-  font-size: var(--text-micro);
-  color: var(--color-muted);
 }
 
 /* Micro Metadata & Archival Labels */
