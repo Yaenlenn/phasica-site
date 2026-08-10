@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHASICA — Independent Health Publication & Companion</title>
+  <meta name="description" content="A private health monitoring and management companion built around the female body and your individual physiological patterns.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Lightweight Header -->
+  <header class="site-header">
+    <a href="index.html" class="header-brand">PHASICA</a>
+    <button id="menuToggle" class="header-menu-btn" aria-expanded="false" aria-controls="menuOverlay">MENU</button>
+  </header>
+
+  <!-- Fullscreen Typography Overlay (Magazine Contents Page) -->
+  <div id="menuOverlay" class="menu-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Table of Contents">
+    <div class="menu-header">
+      <span class="header-brand">PHASICA</span>
+      <button id="menuClose" class="header-menu-btn">CLOSE</button>
+    </div>
+    <div class="menu-body">
+      <div class="menu-section-title">CONTENTS</div>
+      <ul class="menu-nav-list">
+        <li class="menu-nav-item">
+          <span class="menu-nav-num">01</span>
+          <a href="index.html" class="menu-nav-link">HOME</a>
+        </li>
+        <li class="menu-nav-item">
+          <span class="menu-nav-num">02</span>
+          <a href="index.html#editorial" class="menu-nav-link">EDITORIAL</a>
+        </li>
+        <li class="menu-nav-item">
+          <span class="menu-nav-num">03</span>
+          <a href="contact.html" class="menu-nav-link">CONTACT</a>
+        </li>
+        <li class="menu-nav-item">
+          <span class="menu-nav-num">04</span>
+          <a href="privacy.html" class="menu-nav-link">PRIVACY POLICY</a>
+        </li>
+        <li class="menu-nav-item">
+          <span class="menu-nav-num">05</span>
+          <a href="terms.html" class="menu-nav-link">TERMS OF USE</a>
+        </li>
+      </ul>
+      <div>
+        <a href="#" class="link-text link-text--oxblood">GET THE APP ↗</a>
+      </div>
+    </div>
+    <div class="menu-footer">
+      <span>© PHASICA</span>
+      <span>PUBLICATION / 001</span>
+    </div>
+  </div>
+
+  <main class="site-wrapper">
+    <div class="page-container">
+
+      <!-- ===================================================================
+           SECTION 01 — COVER / BRAND
+           =================================================================== -->
+      <section class="editorial-section hero-section fade-in-up">
+        <div class="hero-meta-row">
+          <span class="meta-label">ARCHIVE / 001</span>
+          <span class="meta-number">FIG. 1.0</span>
+        </div>
+
+        <h1 class="hero-title">YOUR BODY HAS A RHYTHM OF ITS OWN.</h1>
+
+        <div class="hero-collage">
+          <div class="hero-photo-wrapper">
+            <img src="assets/images/photo_body_hero.jpg" alt="Editorial portrait of gentle yoga stretching in soft morning light" class="hero-photo">
+          </div>
+          
+          <div class="hero-paper-fragment">
+            <img src="assets/images/paper_fragment_hero.png" alt="Contemporary modern design magazine paper scrap with layout grid notes">
+          </div>
+
+          <div class="hero-annotation">
+            06:42 &nbsp; TEMP +0.18°
+          </div>
+        </div>
+
+        <div class="hero-cta-wrapper">
+          <a href="#" class="link-text">GET THE APP ↗</a>
+          <p class="hero-support-text">A private health companion built around your individual patterns.</p>
+        </div>
+      </section>
+
+
+      <!-- ===================================================================
+           SECTION 02 — BODY / SIGNALS
+           =================================================================== -->
+      <section class="editorial-section signals-section fade-in-up">
+        <div class="hero-meta-row">
+          <span class="meta-label">BODY / SIGNALS</span>
+          <span class="meta-number">OBSERVATION / 014</span>
+        </div>
+
+        <h2 class="signals-title">NO UNIVERSAL BASELINE.</h2>
+
+        <div class="signals-collage">
+          <img src="assets/images/photo_body_signals.jpg" alt="Editorial photograph of woman holding a glass of water in peaceful morning light" class="signals-photo">
+        </div>
+
+        <div class="signals-data-list">
+          <div class="signal-row">
+            <span class="signal-name">HRV</span>
+            <span class="signal-val">64 MS</span>
+          </div>
+          <div class="signal-row">
+            <span class="signal-name">HEART RATE</span>
+            <span class="signal-val">58 BPM</span>
+          </div>
+          <div class="signal-row">
+            <span class="signal-name">SLEEP</span>
+            <span class="signal-val">07:41</span>
+          </div>
+          <div class="signal-row">
+            <span class="signal-name">TEMPERATURE</span>
+            <span class="signal-val signal-val--oxblood">+0.18°</span>
+          </div>
+        </div>
+
+        <!-- Archival Minimal Waveform Trace -->
+        <svg class="waveform-trace" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M 0,20 Q 50,20 80,14 T 160,26 T 240,10 T 320,28 T 400,20" />
+        </svg>
+
+        <p class="signals-support">Signals become more meaningful when read against your own patterns.</p>
+      </section>
+
+
+      <!-- ===================================================================
+           SECTION 03 — PHASICA / MODEL
+           =================================================================== -->
+      <section class="editorial-section model-section fade-in-up">
+        <div class="hero-meta-row">
+          <span class="meta-label">PHASICA / MODEL</span>
+          <span class="meta-number">PLATE / 03</span>
+        </div>
+
+        <h2 class="model-title">BUILT AROUND THE FEMALE BODY.</h2>
+
+        <div class="model-plate">
+          <div class="model-stage">
+            <span class="model-stage-label">SIGNALS</span>
+            <span class="model-stage-content">HRV &nbsp;/&nbsp; HEART RATE &nbsp;/&nbsp; SLEEP &nbsp;/&nbsp; TEMPERATURE</span>
+          </div>
+
+          <div class="model-stage">
+            <span class="model-stage-label">CONTEXT</span>
+            <span class="model-stage-content">CYCLE &nbsp;/&nbsp; SYMPTOMS</span>
+          </div>
+
+          <div class="model-arrow">↓</div>
+
+          <div class="model-highlight">
+            <span class="model-highlight-text">PERSONALIZED MODEL</span>
+          </div>
+
+          <div class="model-arrow">↓</div>
+
+          <div class="model-stage">
+            <span class="model-stage-label">MANAGED OUTPUTS</span>
+            <span class="model-stage-content">RECOVERY &nbsp;/&nbsp; ENERGY &nbsp;/&nbsp; MENSTRUATION</span>
+          </div>
+        </div>
+
+        <p class="model-support">Phasica interprets physiological signals through a personalized model built around your individual patterns.</p>
+
+        <!-- Provisional App Interface Fragment (Evidence of product, not phone mockup) -->
+        <div class="app-ui-fragment">
+          <div class="app-ui-header">
+            <span>PHASICA</span>
+            <span>MODEL BASES</span>
+          </div>
+          <div class="app-ui-row">
+            <span class="signal-name">RECOVERY</span>
+            <span class="app-ui-val">82</span>
+          </div>
+          <div class="app-ui-row">
+            <span class="signal-name">ENERGY</span>
+            <span class="app-ui-val">STEADY</span>
+          </div>
+          <div class="app-ui-row">
+            <span class="signal-name">CYCLE DAY</span>
+            <span class="app-ui-val signal-val--oxblood">18</span>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ===================================================================
+           SECTION 04 — EDITORIAL / INDEX
+           =================================================================== -->
+      <section id="editorial" class="editorial-section editorial-index-section fade-in-up">
+        <div class="hero-meta-row">
+          <span class="meta-label">EDITORIAL / INDEX</span>
+          <span class="meta-number">INDEX / 04</span>
+        </div>
+
+        <div class="editorial-entries">
+          <!-- Article Entry 01 -->
+          <article class="editorial-entry">
+            <div class="editorial-entry-meta">
+              <span>EDITORIAL / 01</span>
+              <span>ESSAY</span>
+            </div>
+            <h3 class="editorial-entry-title">NO UNIVERSAL BASELINE</h3>
+            <p class="editorial-entry-dek">A note on individuality, measurement, and learning to read your own patterns.</p>
+            <a href="article-01.html" class="link-text">READ ↗</a>
+          </article>
+
+          <!-- Article Entry 02 -->
+          <article class="editorial-entry">
+            <div class="editorial-entry-meta">
+              <span>EDITORIAL / 02</span>
+              <span>FIELD NOTE</span>
+            </div>
+            <h3 class="editorial-entry-title">TEMPERATURE IS NOT A STRAIGHT LINE</h3>
+            <p class="editorial-entry-dek">A brief note on temperature variation across the menstrual cycle.</p>
+            <a href="article-02.html" class="link-text">READ ↗</a>
+          </article>
+        </div>
+
+        <!-- Asymmetrical Independent Visual Fragment -->
+        <div class="editorial-visual-fragment">
+          <img src="assets/images/visual_fragment_editorial.jpg" alt="Scanned paper ticket with pressed wildflower fragment">
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- HOME FOOTER / COLOPHON -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">PHASICA</div>
+
+      <div>
+        <a href="#" class="link-text link-text--oxblood">GET THE APP ↗</a>
+      </div>
+
+      <nav class="footer-links">
+        <a href="contact.html">CONTACT</a>
+        <a href="privacy.html">PRIVACY POLICY</a>
+        <a href="terms.html">TERMS OF USE</a>
+      </nav>
+
+      <div class="footer-copyright">
+        © PHASICA
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
