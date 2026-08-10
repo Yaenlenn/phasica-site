@@ -34,13 +34,16 @@ layout: default
       </figure>
       
       <div class="hero-paper-fragment">
-        <img 
-          src="{{ 'assets/images/paper_fragment_hero.webp' | relative_url }}" 
-          alt="Contemporary modern design magazine paper scrap"
-          width="1200"
-          height="896"
-          loading="lazy"
-        >
+        <picture>
+          <source srcset="{{ 'assets/images/paper_fragment_hero.webp' | relative_url }}" type="image/webp">
+          <img 
+            src="{{ 'assets/images/paper_fragment_hero.png' | relative_url }}" 
+            alt="Contemporary modern design magazine paper scrap"
+            width="1200"
+            height="896"
+            loading="lazy"
+          >
+        </picture>
       </div>
 
       <div class="hero-annotation">
