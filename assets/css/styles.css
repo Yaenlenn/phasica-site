@@ -20,8 +20,8 @@
   --color-oxblood: #6B3A36;
   --color-oxblood-fade: rgba(107, 58, 54, 0.15);
 
-  /* Single Unified Chinese Font (LXGW WenKai primary -> PingFang / Songti fallback) */
-  --font-cjk: 'LXGW WenKai TC', 'LXGW WenKai Screen', 'LXGW WenKai', 'PingFang SC', 'PingFang TC', 'PingFang HK', 'Songti SC', 'Songti TC', sans-serif;
+  /* Single Unified Chinese Font (GenRyuMin 源流明體 primary -> LXGW WenKai -> PingFang / Songti fallback) */
+  --font-cjk: 'GenRyuMin', 'GenRyuMin TW', 'GenRyuMin HK', 'GenRyuMin CN', 'GenRyuMin JP', '源流明體', '源流明朝', 'LXGW WenKai TC', 'PingFang SC', 'PingFang TC', 'PingFang HK', 'Songti SC', 'Songti TC', serif;
 
   --font-serif: 'Cormorant Garamond', var(--font-cjk), Georgia, serif;
   --font-mono: 'Space Mono', var(--font-cjk), Courier, monospace;
