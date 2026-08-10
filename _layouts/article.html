@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+{% assign home_url = site.data.routes.home[page.lang] | default: '/' | relative_url %}
+
+<article class="inner-page-container fade-in-up">
+  <header class="inner-header">
+    <div class="meta-label">
+      EDITORIAL / {{ page.editorial_id | default: '01' }} &nbsp;—&nbsp; {{ page.type | default: 'ESSAY' | upcase }}
+    </div>
+    <h1 class="inner-title">{{ page.title }}</h1>
+  </header>
+
+  {% if page.intro %}
+    <p class="inner-intro">{{ page.intro }}</p>
+  {% endif %}
+
+  <div class="inner-content">
+    {{ content }}
+  </div>
+
+  <div class="inner-back-link">
+    <a href="{{ home_url }}" class="link-text">{{ t.nav.back_to_home }}</a>
+  </div>
+</article>

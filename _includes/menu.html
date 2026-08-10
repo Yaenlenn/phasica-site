@@ -1,0 +1,48 @@
+{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+{% assign home_url = site.data.routes.home[page.lang] | default: '/' | relative_url %}
+{% assign editorial_url = home_url | append: '#editorial' %}
+{% assign contact_url = site.data.routes.contact[page.lang] | default: '/contact/' | relative_url %}
+{% assign privacy_url = site.data.routes.privacy[page.lang] | default: '/privacy/' | relative_url %}
+{% assign terms_url = site.data.routes.terms[page.lang] | default: '/terms/' | relative_url %}
+
+<div id="menuOverlay" class="menu-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="{{ t.nav.contents_label }}">
+  <div class="menu-header">
+    <span class="header-brand">{{ site.data.site.brand }}</span>
+    <button id="menuClose" class="header-menu-btn">{{ t.nav.close }}</button>
+  </div>
+  <div class="menu-body">
+    <div class="menu-section-title">{{ t.nav.contents_label }}</div>
+    <ul class="menu-nav-list">
+      <li class="menu-nav-item">
+        <span class="menu-nav-num">01</span>
+        <a href="{{ home_url }}" class="menu-nav-link">{{ t.nav.home }}</a>
+      </li>
+      <li class="menu-nav-item">
+        <span class="menu-nav-num">02</span>
+        <a href="{{ editorial_url }}" class="menu-nav-link">{{ t.nav.editorial }}</a>
+      </li>
+      <li class="menu-nav-item">
+        <span class="menu-nav-num">03</span>
+        <a href="{{ contact_url }}" class="menu-nav-link">{{ t.nav.contact }}</a>
+      </li>
+      <li class="menu-nav-item">
+        <span class="menu-nav-num">04</span>
+        <a href="{{ privacy_url }}" class="menu-nav-link">{{ t.nav.privacy }}</a>
+      </li>
+      <li class="menu-nav-item">
+        <span class="menu-nav-num">05</span>
+        <a href="{{ terms_url }}" class="menu-nav-link">{{ t.nav.terms }}</a>
+      </li>
+    </ul>
+
+    {% include language-switcher.html %}
+
+    <div>
+      <a href="{{ site.data.site.app_store_url }}" class="link-text link-text--oxblood">{{ t.nav.get_the_app }}</a>
+    </div>
+  </div>
+  <div class="menu-footer">
+    <span>{{ site.data.site.copyright_text }}</span>
+    <span>{{ site.data.site.publication_num }}</span>
+  </div>
+</div>

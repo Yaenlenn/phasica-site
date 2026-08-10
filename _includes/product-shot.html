@@ -1,0 +1,17 @@
+{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+{% assign lang_code = page.lang | downcase %}
+{% assign primary_src = 'assets/product/' | append: lang_code | append: '/model-overview.webp' | relative_url %}
+{% assign fallback_src = 'assets/product/en/model-overview.webp' | relative_url %}
+
+<figure class="paper-image paper-mask--product-01 product-screenshot-wrapper">
+  <img 
+    src="{{ primary_src }}" 
+    data-fallback="{{ fallback_src }}"
+    alt="{{ t.alts.product_shot }}"
+    class="product-screenshot"
+    loading="lazy"
+    width="1206"
+    height="2622"
+    onerror="if(!this.dataset.failed){this.dataset.failed='true';this.src=this.dataset.fallback;}"
+  >
+</figure>

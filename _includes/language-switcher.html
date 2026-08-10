@@ -1,0 +1,21 @@
+{% assign current_key = page.translation_key | default: 'home' %}
+{% assign route_item = site.data.routes[current_key] %}
+
+<div class="menu-language-switcher">
+  <div class="menu-section-title">{{ t.nav.language }}</div>
+  <ul class="language-nav-list">
+    {% for l in site.data.site.locales %}
+      {% assign loc = site.data.locales[l] %}
+      {% if route_item and route_item[l] %}
+        {% assign l_url = route_item[l] | relative_url %}
+      {% else %}
+        {% assign l_url = loc.prefix | append: '/' | relative_url %}
+      {% endif %}
+      <li class="language-nav-item">
+        <a href="{{ l_url }}" class="language-nav-link{% if l == page.lang %} is-active{% endif %}">
+          {{ loc.label }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

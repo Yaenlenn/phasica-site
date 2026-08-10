@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+{% assign home_url = site.data.routes.home[page.lang] | default: '/' | relative_url %}
+
+<div class="inner-page-container fade-in-up">
+  <header class="inner-header">
+    <div class="meta-label">{{ t.contact.meta_label }}</div>
+    <h1 class="inner-title">{{ t.contact.title }}</h1>
+  </header>
+
+  <div class="contact-categories">
+    <!-- Category 01 -->
+    <section class="contact-card">
+      <h2 class="contact-category-title">{{ t.contact.cat1_title }}</h2>
+      <p class="contact-desc">{{ t.contact.cat1_desc }}</p>
+      <a href="mailto:{{ site.data.site.support_email }}" class="link-text link-text--oxblood">{{ site.data.site.support_email }} ↗</a>
+    </section>
+
+    <!-- Category 02 -->
+    <section class="contact-card">
+      <h2 class="contact-category-title">{{ t.contact.cat2_title }}</h2>
+      <p class="contact-desc">{{ t.contact.cat2_desc }}</p>
+      <a href="mailto:{{ site.data.site.legal_email }}" class="link-text link-text--oxblood">{{ site.data.site.legal_email }} ↗</a>
+    </section>
+  </div>
+
+  <div class="inner-back-link">
+    <a href="{{ home_url }}" class="link-text">{{ t.nav.back_to_home }}</a>
+  </div>
+</div>

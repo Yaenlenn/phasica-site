@@ -1,0 +1,196 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+{% assign art1_url = site.data.routes.article_01[page.lang] | relative_url %}
+{% assign art2_url = site.data.routes.article_02[page.lang] | relative_url %}
+
+<div class="page-container">
+
+  <!-- ===================================================================
+       SECTION 01 — COVER / BRAND
+       =================================================================== -->
+  <section class="editorial-section hero-section fade-in-up">
+    <div class="hero-meta-row">
+      <span class="meta-label">{{ t.hero.archive_label }}</span>
+      <span class="meta-number">{{ t.hero.fig_num }}</span>
+    </div>
+
+    <h1 class="hero-title">
+      {% for line in t.hero.title_lines %}
+        {{ line }}{% if forloop.last == false %}<br>{% endif %}
+      {% endfor %}
+    </h1>
+
+    <div class="hero-collage">
+      <figure class="paper-image paper-mask--portrait-01 hero-photo-wrapper">
+        <img 
+          src="{{ 'assets/images/photo_body_hero.webp' | relative_url }}" 
+          alt="{{ t.alts.hero_photo }}" 
+          class="hero-photo"
+          width="928"
+          height="1152"
+        >
+      </figure>
+      
+      <div class="hero-paper-fragment">
+        <img 
+          src="{{ 'assets/images/paper_fragment_hero.webp' | relative_url }}" 
+          alt="Contemporary modern design magazine paper scrap"
+          width="1200"
+          height="896"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="hero-annotation">
+        {{ t.hero.annotation }}
+      </div>
+    </div>
+
+    <div class="hero-cta-wrapper">
+      <a href="{{ site.data.site.app_store_url }}" class="link-text">{{ t.nav.get_the_app }}</a>
+      <p class="hero-support-text">{{ t.hero.support }}</p>
+    </div>
+  </section>
+
+
+  <!-- ===================================================================
+       SECTION 02 — BODY / SIGNALS
+       =================================================================== -->
+  <section class="editorial-section signals-section fade-in-up">
+    <div class="hero-meta-row">
+      <span class="meta-label">{{ t.signals.meta_label }}</span>
+      <span class="meta-number">{{ t.signals.meta_number }}</span>
+    </div>
+
+    <h2 class="signals-title">{{ t.signals.title }}</h2>
+
+    <div class="signals-collage">
+      <figure class="paper-image paper-mask--portrait-02 signals-photo-wrapper">
+        <img 
+          src="{{ 'assets/images/photo_body_signals.webp' | relative_url }}" 
+          alt="{{ t.alts.signals_photo }}" 
+          class="signals-photo"
+          loading="lazy"
+          width="896"
+          height="1200"
+        >
+      </figure>
+    </div>
+
+    <div class="signals-data-list">
+      <div class="signal-row">
+        <span class="signal-name">{{ t.signals.hrv }}</span>
+        <span class="signal-val">64 MS</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-name">{{ t.signals.heart_rate }}</span>
+        <span class="signal-val">58 BPM</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-name">{{ t.signals.sleep }}</span>
+        <span class="signal-val">07:41</span>
+      </div>
+      <div class="signal-row">
+        <span class="signal-name">{{ t.signals.temperature }}</span>
+        <span class="signal-val signal-val--oxblood">+0.18°</span>
+      </div>
+    </div>
+
+    <!-- Archival Minimal Waveform Trace -->
+    <svg class="waveform-trace" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M 0,20 Q 50,20 80,14 T 160,26 T 240,10 T 320,28 T 400,20" />
+    </svg>
+
+    <p class="signals-support">{{ t.signals.support }}</p>
+  </section>
+
+
+  <!-- ===================================================================
+       SECTION 03 — PHASICA / MODEL
+       =================================================================== -->
+  <section class="editorial-section model-section fade-in-up">
+    <div class="hero-meta-row">
+      <span class="meta-label">{{ t.model.meta_label }}</span>
+      <span class="meta-number">{{ t.model.meta_number }}</span>
+    </div>
+
+    <h2 class="model-title">{{ t.model.title }}</h2>
+
+    <div class="model-plate">
+      <div class="model-stage">
+        <span class="model-stage-label">{{ t.model.stage_signals }}</span>
+        <span class="model-stage-content">{{ t.model.stage_signals_val }}</span>
+      </div>
+
+      <div class="model-stage">
+        <span class="model-stage-label">{{ t.model.stage_context }}</span>
+        <span class="model-stage-content">{{ t.model.stage_context_val }}</span>
+      </div>
+
+      <div class="model-arrow">↓</div>
+
+      <div class="model-highlight">
+        <span class="model-highlight-text">{{ t.model.highlight }}</span>
+      </div>
+
+      <div class="model-arrow">↓</div>
+
+      <div class="model-stage">
+        <span class="model-stage-label">{{ t.model.stage_outputs }}</span>
+        <span class="model-stage-content">{{ t.model.stage_outputs_val }}</span>
+      </div>
+    </div>
+
+    <p class="model-support">{{ t.model.support }}</p>
+
+    <!-- Real Product Screenshot Component with Automatic Fallback -->
+    {% include product-shot.html %}
+  </section>
+
+
+  <!-- ===================================================================
+       SECTION 04 — EDITORIAL / INDEX
+       =================================================================== -->
+  <section id="editorial" class="editorial-section editorial-index-section fade-in-up">
+    <div class="hero-meta-row">
+      <span class="meta-label">{{ t.editorial.meta_label }}</span>
+      <span class="meta-number">{{ t.editorial.meta_number }}</span>
+    </div>
+
+    <div class="editorial-entries">
+      <!-- Article Entry 01 -->
+      <article class="editorial-entry">
+        <div class="editorial-entry-meta">
+          <span>{{ t.editorial.art1_meta }}</span>
+        </div>
+        <h3 class="editorial-entry-title">{{ t.editorial.art1_title }}</h3>
+        <p class="editorial-entry-dek">{{ t.editorial.art1_dek }}</p>
+        <a href="{{ art1_url }}" class="link-text">{{ t.nav.read }}</a>
+      </article>
+
+      <!-- Article Entry 02 -->
+      <article class="editorial-entry">
+        <div class="editorial-entry-meta">
+          <span>{{ t.editorial.art2_meta }}</span>
+        </div>
+        <h3 class="editorial-entry-title">{{ t.editorial.art2_title }}</h3>
+        <p class="editorial-entry-dek">{{ t.editorial.art2_dek }}</p>
+        <a href="{{ art2_url }}" class="link-text">{{ t.nav.read }}</a>
+      </article>
+    </div>
+
+    <!-- Asymmetrical Independent Visual Fragment with Paper Mask -->
+    <figure class="paper-image paper-mask--landscape-01 editorial-visual-fragment">
+      <img 
+        src="{{ 'assets/images/visual_fragment_editorial.webp' | relative_url }}" 
+        alt="{{ t.alts.editorial_visual }}"
+        loading="lazy"
+        width="1200"
+        height="896"
+      >
+    </figure>
+  </section>
+
+</div>

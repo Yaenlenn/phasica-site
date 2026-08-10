@@ -1,0 +1,24 @@
+{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+{% assign contact_url = site.data.routes.contact[page.lang] | default: '/contact/' | relative_url %}
+{% assign privacy_url = site.data.routes.privacy[page.lang] | default: '/privacy/' | relative_url %}
+{% assign terms_url = site.data.routes.terms[page.lang] | default: '/terms/' | relative_url %}
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">{{ site.data.site.brand }}</div>
+
+    <div>
+      <a href="{{ site.data.site.app_store_url }}" class="link-text link-text--oxblood">{{ t.nav.get_the_app }}</a>
+    </div>
+
+    <nav class="footer-links">
+      <a href="{{ contact_url }}">{{ t.nav.contact }}</a>
+      <a href="{{ privacy_url }}">{{ t.nav.privacy }}</a>
+      <a href="{{ terms_url }}">{{ t.nav.terms }}</a>
+    </nav>
+
+    <div class="footer-copyright">
+      {{ site.data.site.copyright_text }}
+    </div>
+  </div>
+</footer>

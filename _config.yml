@@ -1,0 +1,12 @@
+title: PHASICA — Independent Health Publication & Companion
+description: A private health monitoring and management companion built around the female body and your individual physiological patterns.
+url: ""
+baseurl: ""
+permalink: pretty
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

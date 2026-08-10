@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+{% assign home_url = site.data.routes.home[page.lang] | default: '/' | relative_url %}
+
+<div class="inner-page-container fade-in-up">
+  <header class="inner-header">
+    <div class="meta-label">LEGAL / {{ page.legal_id | default: '01' }}</div>
+    <h1 class="inner-title">{{ page.title }}</h1>
+    {% if page.last_updated %}
+      <div class="meta-number">Last updated: {{ page.last_updated }}</div>
+    {% endif %}
+  </header>
+
+  <div class="inner-content legal-content">
+    {{ content }}
+  </div>
+
+  <div class="inner-back-link">
+    <a href="{{ home_url }}" class="link-text">{{ t.nav.back_to_home }}</a>
+  </div>
+</div>
