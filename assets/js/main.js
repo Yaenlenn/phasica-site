@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const observerOptions = {
     root: null,
     rootMargin: '0px 0px -50px 0px',
-    threshold: 0.1
+    threshold: 0
   };
 
   const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -64,5 +64,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   const revealElements = document.querySelectorAll('.fade-in-up');
-  revealElements.forEach(el => revealObserver.observe(el));
+  revealElements.forEach(el => {
+    revealObserver.observe(el);
+    // Immediate check for elements already in viewport on load (e.g., top page container)
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('is-visible');
+    }
+  });
 });

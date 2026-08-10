@@ -4,7 +4,7 @@ layout: default
 {% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
 {% assign home_url = site.data.routes.home[page.lang] | default: '/' | relative_url %}
 
-<div class="inner-page-container fade-in-up">
+<div class="inner-page-container">
   <header class="inner-header">
     <div class="meta-label">{{ t.contact.meta_label }}</div>
     <h1 class="inner-title">{{ t.contact.title }}</h1>
