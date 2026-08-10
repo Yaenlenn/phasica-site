@@ -1,0 +1,78 @@
+nav:
+  home: "首頁"
+  editorial: "刊物索引"
+  contact: "聯絡我們"
+  privacy: "私隱政策"
+  terms: "使用條款"
+  contents: "目錄"
+  get_the_app: "下載 App ↗"
+  menu: "功能表"
+  close: "關閉"
+  language: "語言"
+  back_to_home: "← 返回首頁"
+  read: "閱讀全文 ↗"
+  contents_label: "目錄"
+  publication_id: "刊物 / 001"
+
+hero:
+  archive_label: "檔案 / 001"
+  fig_num: "圖 1.0"
+  title_lines:
+    - "身體"
+    - "自有其"
+    - "獨特韻律"
+  annotation: "06:42 &nbsp; 體溫 +0.18°"
+  support: "圍繞你個人生理模式構建的私密健康伴侶。"
+
+signals:
+  meta_label: "身體 / 訊號"
+  meta_number: "觀察 / 014"
+  title: "無需通用基準"
+  support: "當結合你的個人生理規律進行對比時，身體訊號才具有真正意義。"
+  hrv: "心率變異度"
+  heart_rate: "靜息心率"
+  sleep: "睡眠時長"
+  temperature: "夜間體溫"
+
+model:
+  meta_label: "PHASICA / 模型"
+  meta_number: "圖版 / 03"
+  title: "專為女性生理學設計"
+  stage_signals: "生理訊號"
+  stage_signals_val: "心率變異度 &nbsp;/&nbsp; 靜息心率 &nbsp;/&nbsp; 睡眠 &nbsp;/&nbsp; 體溫"
+  stage_context: "背景資訊"
+  stage_context_val: "週期 &nbsp;/&nbsp; 症狀記錄"
+  highlight: "個人化模型"
+  stage_outputs: "管理輸出"
+  stage_outputs_val: "恢復狀態 &nbsp;/&nbsp; 精力水平 &nbsp;/&nbsp; 經期預測"
+  support: "Phasica 透過基於你個人規律構建的個人化模型，深刻解讀生理訊號。"
+  app_title: "PHASICA"
+  app_subtitle: "模型基準"
+  app_recovery: "恢復指數"
+  app_energy: "精力狀態"
+  app_cycle_day: "週期第"
+  app_energy_val: "平穩"
+
+editorial:
+  meta_label: "刊物 / 索引"
+  meta_number: "索引 / 04"
+  art1_meta: "刊物 / 01 &nbsp;—&nbsp; 隨筆"
+  art1_title: "無需通用基準"
+  art1_dek: "關於個體差異、量度意義以及學會解讀自身生理規律的思考。"
+  art2_meta: "刊物 / 02 &nbsp;—&nbsp; 觀察隨筆"
+  art2_title: "體溫並非一條直線"
+  art2_dek: "關於月經週期中體溫波動的簡略觀察。"
+
+contact:
+  meta_label: "溝通"
+  title: "意見及聯絡"
+  cat1_title: "01 / 產品及支援"
+  cat1_desc: "關於 Phasica 體驗的建議、疑問、技術問題或思考。"
+  cat2_title: "02 / 法律及商務"
+  cat2_desc: "法律、商務合作或商業查詢。"
+
+alts:
+  hero_photo: "晨光中舒緩身體動作的影像"
+  signals_photo: "晨光中休憩與沉思的影像"
+  editorial_visual: "掃描檔案碎屑與觀察記錄筆記"
+  product_shot: "Phasica 應用程式個人化模型介面，展示恢復、精力與週期指標"

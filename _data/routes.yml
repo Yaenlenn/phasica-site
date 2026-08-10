@@ -1,0 +1,41 @@
+home:
+  en: "/"
+  zh-cn: "/zh-cn/"
+  zh-tw: "/zh-tw/"
+  zh-hk: "/zh-hk/"
+  de: "/de/"
+
+contact:
+  en: "/contact/"
+  zh-cn: "/zh-cn/contact/"
+  zh-tw: "/zh-tw/contact/"
+  zh-hk: "/zh-hk/contact/"
+  de: "/de/contact/"
+
+privacy:
+  en: "/privacy/"
+  zh-cn: "/zh-cn/privacy/"
+  zh-tw: "/zh-tw/privacy/"
+  zh-hk: "/zh-hk/privacy/"
+  de: "/de/privacy/"
+
+terms:
+  en: "/terms/"
+  zh-cn: "/zh-cn/terms/"
+  zh-tw: "/zh-tw/terms/"
+  zh-hk: "/zh-hk/terms/"
+  de: "/de/terms/"
+
+article_01:
+  en: "/editorial/no-universal-baseline/"
+  zh-cn: "/zh-cn/editorial/no-universal-baseline/"
+  zh-tw: "/zh-tw/editorial/no-universal-baseline/"
+  zh-hk: "/zh-hk/editorial/no-universal-baseline/"
+  de: "/de/editorial/no-universal-baseline/"
+
+article_02:
+  en: "/editorial/temperature-is-not-a-straight-line/"
+  zh-cn: "/zh-cn/editorial/temperature-is-not-a-straight-line/"
+  zh-tw: "/zh-tw/editorial/temperature-is-not-a-straight-line/"
+  zh-hk: "/zh-hk/editorial/temperature-is-not-a-straight-line/"
+  de: "/de/editorial/temperature-is-not-a-straight-line/"

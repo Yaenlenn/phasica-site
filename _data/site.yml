@@ -1,0 +1,13 @@
+brand: PHASICA
+support_email: help.phasica@outlook.com
+legal_email: yaenlenn@outlook.com
+app_store_url: "#"
+publication_num: "PUBLICATION / 001"
+copyright_text: "© PHASICA"
+default_locale: en
+locales:
+  - en
+  - zh-cn
+  - zh-tw
+  - zh-hk
+  - de

@@ -1,0 +1,34 @@
+en:
+  code: en
+  lang: en
+  name: English
+  label: EN
+  prefix: ""
+
+zh-cn:
+  code: zh-cn
+  lang: zh-CN
+  name: 简体中文
+  label: 简中
+  prefix: "/zh-cn"
+
+zh-tw:
+  code: zh-tw
+  lang: zh-TW
+  name: 繁體中文（台灣）
+  label: 繁中 · 台
+  prefix: "/zh-tw"
+
+zh-hk:
+  code: zh-hk
+  lang: zh-HK
+  name: 繁體中文（香港）
+  label: 繁中 · 港
+  prefix: "/zh-hk"
+
+de:
+  code: de
+  lang: de
+  name: Deutsch
+  label: DE
+  prefix: "/de"
