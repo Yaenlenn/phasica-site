@@ -5,6 +5,8 @@
 {% assign privacy_url = site.data.routes.privacy[page.lang] | default: '/privacy/' | relative_url %}
 {% assign terms_url = site.data.routes.terms[page.lang] | default: '/terms/' | relative_url %}
 
+<div id="menuBackdrop" class="menu-backdrop" aria-hidden="true"></div>
+
 <div id="menuOverlay" class="menu-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="{{ t.nav.contents_label }}">
   <div class="menu-header">
     <span class="header-brand">{{ site.data.site.brand }}</span>

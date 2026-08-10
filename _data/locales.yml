@@ -16,14 +16,14 @@ zh-tw:
   code: zh-tw
   lang: zh-TW
   name: 繁體中文（台灣）
-  label: 繁中 · 台
+  label: 繁中·台
   prefix: "/zh-tw"
 
 zh-hk:
   code: zh-hk
   lang: zh-HK
   name: 繁體中文（香港）
-  label: 繁中 · 港
+  label: 繁中·港
   prefix: "/zh-hk"
 
 de:
