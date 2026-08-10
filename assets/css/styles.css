@@ -20,9 +20,19 @@
   --color-oxblood: #6B3A36;
   --color-oxblood-fade: rgba(107, 58, 54, 0.15);
 
-  /* Typography Families with CJK Fallbacks */
-  --font-serif: 'Cormorant Garamond', 'Songti SC', 'STSong', 'Noto Serif CJK SC', 'Noto Serif CJK TC', 'Times New Roman', Georgia, serif;
-  --font-mono: 'Space Mono', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'Courier New', Courier, monospace;
+  /* Typography Families with Language-Aware CJK Fallbacks */
+  --font-cjk-sc: 'LXGW WenKai TC', 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'PingFang SC', serif;
+  --font-cjk-tc: 'LXGW WenKai TC', 'Noto Serif TC', 'Noto Serif HK', 'Source Han Serif TC', 'Songti TC', 'PingFang HK', 'PingFang TC', 'Apple LiSung', 'PMingLiU', serif;
+  
+  --font-cjk-sans-sc: 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', sans-serif;
+  --font-cjk-sans-tc: 'PingFang HK', 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif;
+
+  /* Default CJK Selection */
+  --font-cjk-body: var(--font-cjk-sc);
+  --font-cjk-sans: var(--font-cjk-sans-sc);
+
+  --font-serif: 'Cormorant Garamond', var(--font-cjk-body), 'Times New Roman', Georgia, serif;
+  --font-mono: 'Space Mono', var(--font-cjk-sans), 'Courier New', Courier, monospace;
 
   /* Typography Scale */
   --text-display: clamp(2.1rem, 7vw, 3.4rem);
@@ -40,6 +50,17 @@
   /* Motion */
   --ease-paper: cubic-bezier(0.16, 1, 0.3, 1);
   --duration-paper: 0.45s;
+}
+
+/* Language-Specific CJK Font Overrides */
+:lang(zh-CN), :lang(zh-Hans) {
+  --font-cjk-body: var(--font-cjk-sc);
+  --font-cjk-sans: var(--font-cjk-sans-sc);
+}
+
+:lang(zh-TW), :lang(zh-HK), :lang(zh-Hant), :lang(zh-MO) {
+  --font-cjk-body: var(--font-cjk-tc);
+  --font-cjk-sans: var(--font-cjk-sans-tc);
 }
 
 /* Base Reset */
