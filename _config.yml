@@ -1,7 +1,7 @@
 title: PHASICA — Independent Health Publication & Companion
 description: A private health monitoring and management companion built around the female body and your individual physiological patterns.
-url: ""
-baseurl: ""
+url: "https://yaenlenn.github.io"
+baseurl: "/phasica-site"
 permalink: pretty
 
 markdown: kramdown
