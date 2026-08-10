@@ -6,7 +6,7 @@ editorial_id: "02"
 type: Field Note
 intro: "A brief note on temperature variation across the menstrual cycle."
 permalink: /editorial/temperature-is-not-a-straight-line/
-translation_key: article_02
+translation_key: temperature-is-not-a-straight-line
 ---
 
 Human body temperature is frequently conceptualized as a constant: a fixed 37.0°C (98.6°F) benchmark against which health and illness are measured. In physiological reality, resting core body temperature is never a static straight line. It is a continuous, dynamic rhythm governed by circadian regulation, metabolic activity, and, in women of reproductive age, systemic endocrine shifts across the menstrual cycle.

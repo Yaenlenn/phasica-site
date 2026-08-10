@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
-{% assign art1_url = site.data.routes.article_01[page.lang] | relative_url %}
-{% assign art2_url = site.data.routes.article_02[page.lang] | relative_url %}
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.i18n[lang] | default: site.data.i18n.en %}
+{% assign art1_url = site.data.routes['no-universal-baseline'][lang] | default: site.data.routes['article-no-universal-baseline'][lang] | relative_url %}
+{% assign art2_url = site.data.routes['temperature-is-not-a-straight-line'][lang] | default: site.data.routes['article-temperature'][lang] | relative_url %}
 
 <div class="page-container">
 

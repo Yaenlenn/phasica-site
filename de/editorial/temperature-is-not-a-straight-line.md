@@ -6,7 +6,7 @@ editorial_id: "02"
 type: Field Note
 intro: "Eine kurze Anmerkung zu Temperaturschwankungen im Verlauf des Menstruationszyklus."
 permalink: /de/editorial/temperature-is-not-a-straight-line/
-translation_key: article_02
+translation_key: temperature-is-not-a-straight-line
 ---
 
 Die menschliche Körpertemperatur wird häufig als Konstante begriffen: ein fester Benchmark von 37.0°C (98.6°F), an dem Gesundheit und Krankheit gemessen werden. In der physiologischen Realität ist die Ruhekerntemperatur des Körpers jedoch niemals eine statische gerade Linie. Sie ist ein kontinuierlicher, dynamischer Rhythmus, der durch zirkadiane Regulation, Stoffwechselaktivität und bei Frauen im gebärfähigen Alter durch systemische endokrine Veränderungen im Verlauf des Menstruationszyklus gesteuert wird.

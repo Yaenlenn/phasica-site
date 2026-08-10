@@ -6,7 +6,7 @@ editorial_id: "01"
 type: Essay
 intro: "A note on individuality, measurement, and learning to read your own physiological patterns."
 permalink: /editorial/no-universal-baseline/
-translation_key: article_01
+translation_key: no-universal-baseline
 ---
 
 In clinical physiology and public health literature, population averages serve a practical purpose. They establish normative ranges across thousands of subjects, offering clinicians standardized statistical benchmarks for large-scale screening. Yet for any single living individual, an abstract population mean rarely functions as an accurate personal reference point. The female body does not exist in a static state of equilibrium; it operates within a continuous, dynamic spectrum of monthly hormonal shifts, circadian adaptations, environmental responses, and physical stress.

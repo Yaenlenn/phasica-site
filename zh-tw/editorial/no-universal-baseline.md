@@ -6,7 +6,7 @@ editorial_id: "01"
 type: Essay
 intro: "關於個體差異、量測意義以及學會解讀自身生理規律的思考。"
 permalink: /zh-tw/editorial/no-universal-baseline/
-translation_key: article_01
+translation_key: no-universal-baseline
 ---
 
 在臨床生理學與公共衛生文獻中，群體平均值具備明確的實用價值。它們透過成千上萬受試者的統計資料確立標準化基準，為臨床醫生進行大規模篩檢提供統一依據。然而，對於任何一個具體的個體而言，抽象的群體平均值卻極少能作為準確的個人參考點。女性身體並非處於靜止不變的平衡狀態；它運行在一個由每月荷爾蒙變化、晝夜節律調節、環境響應及身體壓力構成的連續動態光譜中。

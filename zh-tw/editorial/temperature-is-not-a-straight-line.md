@@ -6,7 +6,7 @@ editorial_id: "02"
 type: Field Note
 intro: "關於月經週期中體溫波動的簡要觀察。"
 permalink: /zh-tw/editorial/temperature-is-not-a-straight-line/
-translation_key: article_02
+translation_key: temperature-is-not-a-straight-line
 ---
 
 人體體溫常被抽象為一個恆定常數：以 37.0°C 作為衡量健康與疾病的固定基準。然而在生理現實中，靜息核心體溫絕非一條平直的直線。它是一個由晝夜節律、新陳代謝以及育齡期女性月經週期中內分泌變化共同主導的連續動態韻律。

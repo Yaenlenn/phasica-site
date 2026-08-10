@@ -1,7 +1,8 @@
-{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
-{% assign contact_url = site.data.routes.contact[page.lang] | default: '/contact/' | relative_url %}
-{% assign privacy_url = site.data.routes.privacy[page.lang] | default: '/privacy/' | relative_url %}
-{% assign terms_url = site.data.routes.terms[page.lang] | default: '/terms/' | relative_url %}
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.i18n[lang] | default: site.data.i18n.en %}
+{% assign contact_url = site.data.routes.contact[lang] | relative_url %}
+{% assign privacy_url = site.data.routes.privacy[lang] | relative_url %}
+{% assign terms_url = site.data.routes.terms[lang] | relative_url %}
 
 <footer class="site-footer">
   <div class="footer-content">

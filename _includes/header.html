@@ -1,5 +1,6 @@
-{% assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
-{% assign home_url = site.data.routes.home[page.lang] | default: '/' | relative_url %}
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.i18n[lang] | default: site.data.i18n.en %}
+{% assign home_url = site.data.routes.home[lang] | relative_url %}
 <header class="site-header">
   <a href="{{ home_url }}" class="header-brand">{{ site.data.site.brand }}</a>
   <button id="menuToggle" class="header-menu-btn" aria-expanded="false" aria-controls="menuOverlay">{{ t.nav.menu }}</button>

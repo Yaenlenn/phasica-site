@@ -7,7 +7,7 @@ copyright_text: "© PHASICA"
 default_locale: en
 locales:
   - en
-  - zh-cn
-  - zh-tw
-  - zh-hk
+  - zh-CN
+  - zh-TW
+  - zh-HK
   - de

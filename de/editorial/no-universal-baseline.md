@@ -6,7 +6,7 @@ editorial_id: "01"
 type: Essay
 intro: "Über Individualität, Messung und das Erlernen, die eigenen Muster zu verstehen."
 permalink: /de/editorial/no-universal-baseline/
-translation_key: article_01
+translation_key: no-universal-baseline
 ---
 
 In der klinischen Physiologie und der Literatur der öffentlichen Gesundheit erfüllen Populationsdurchschnitte einen praktischen Zweck. Sie etablieren normative Bereiche über Tausende von Probanden hinweg und bieten Klinikern standardisierte statistische Benchmarks für großflächiges Screening. Doch für ein einzelnes lebendes Individuum dient ein abstrakter Populationsmittelwert selten als genauer persönlicher Referenzpunkt. Der weibliche Körper befindet sich nicht in einem statischen Gleichgewichtszustand; er bewegt sich innerhalb eines kontinuierlichen, dynamischen Spektrums monatlicher hormoneller Veränderungen, zirkadianer Anpassungen, Umweltreaktionen und körperlicher Belastungen.

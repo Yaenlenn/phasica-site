@@ -1,41 +1,62 @@
 home:
   en: "/"
-  zh-cn: "/zh-cn/"
-  zh-tw: "/zh-tw/"
-  zh-hk: "/zh-hk/"
+  zh-CN: "/zh-cn/"
+  zh-TW: "/zh-tw/"
+  zh-HK: "/zh-hk/"
   de: "/de/"
+
+editorial:
+  en: "/#editorial"
+  zh-CN: "/zh-cn/#editorial"
+  zh-TW: "/zh-tw/#editorial"
+  zh-HK: "/zh-hk/#editorial"
+  de: "/de/#editorial"
 
 contact:
   en: "/contact/"
-  zh-cn: "/zh-cn/contact/"
-  zh-tw: "/zh-tw/contact/"
-  zh-hk: "/zh-hk/contact/"
+  zh-CN: "/zh-cn/contact/"
+  zh-TW: "/zh-tw/contact/"
+  zh-HK: "/zh-hk/contact/"
   de: "/de/contact/"
 
 privacy:
   en: "/privacy/"
-  zh-cn: "/zh-cn/privacy/"
-  zh-tw: "/zh-tw/privacy/"
-  zh-hk: "/zh-hk/privacy/"
+  zh-CN: "/zh-cn/privacy/"
+  zh-TW: "/zh-tw/privacy/"
+  zh-HK: "/zh-hk/privacy/"
   de: "/de/privacy/"
 
 terms:
   en: "/terms/"
-  zh-cn: "/zh-cn/terms/"
-  zh-tw: "/zh-tw/terms/"
-  zh-hk: "/zh-hk/terms/"
+  zh-CN: "/zh-cn/terms/"
+  zh-TW: "/zh-tw/terms/"
+  zh-HK: "/zh-hk/terms/"
   de: "/de/terms/"
 
-article_01:
+article-no-universal-baseline:
   en: "/editorial/no-universal-baseline/"
-  zh-cn: "/zh-cn/editorial/no-universal-baseline/"
-  zh-tw: "/zh-tw/editorial/no-universal-baseline/"
-  zh-hk: "/zh-hk/editorial/no-universal-baseline/"
+  zh-CN: "/zh-cn/editorial/no-universal-baseline/"
+  zh-TW: "/zh-tw/editorial/no-universal-baseline/"
+  zh-HK: "/zh-hk/editorial/no-universal-baseline/"
   de: "/de/editorial/no-universal-baseline/"
 
-article_02:
+no-universal-baseline:
+  en: "/editorial/no-universal-baseline/"
+  zh-CN: "/zh-cn/editorial/no-universal-baseline/"
+  zh-TW: "/zh-tw/editorial/no-universal-baseline/"
+  zh-HK: "/zh-hk/editorial/no-universal-baseline/"
+  de: "/de/editorial/no-universal-baseline/"
+
+article-temperature:
   en: "/editorial/temperature-is-not-a-straight-line/"
-  zh-cn: "/zh-cn/editorial/temperature-is-not-a-straight-line/"
-  zh-tw: "/zh-tw/editorial/temperature-is-not-a-straight-line/"
-  zh-hk: "/zh-hk/editorial/temperature-is-not-a-straight-line/"
+  zh-CN: "/zh-cn/editorial/temperature-is-not-a-straight-line/"
+  zh-TW: "/zh-tw/editorial/temperature-is-not-a-straight-line/"
+  zh-HK: "/zh-hk/editorial/temperature-is-not-a-straight-line/"
+  de: "/de/editorial/temperature-is-not-a-straight-line/"
+
+temperature-is-not-a-straight-line:
+  en: "/editorial/temperature-is-not-a-straight-line/"
+  zh-CN: "/zh-cn/editorial/temperature-is-not-a-straight-line/"
+  zh-TW: "/zh-tw/editorial/temperature-is-not-a-straight-line/"
+  zh-HK: "/zh-hk/editorial/temperature-is-not-a-straight-line/"
   de: "/de/editorial/temperature-is-not-a-straight-line/"

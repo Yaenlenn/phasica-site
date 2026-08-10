@@ -6,7 +6,7 @@ editorial_id: "02"
 type: Field Note
 intro: "关于月经周期中体温波动的简明观察。"
 permalink: /zh-cn/editorial/temperature-is-not-a-straight-line/
-translation_key: article_02
+translation_key: temperature-is-not-a-straight-line
 ---
 
 人体体温常被抽象为一个恒定常数：以 37.0°C 作为衡量健康与疾病的固定基准。然而在生理现实中，静息核心体温绝非一条平直的直线。它是一个由昼夜节律、新陈代谢以及育龄期女性月经周期中内分泌变化共同主导的连续动态韵律。

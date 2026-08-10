@@ -6,7 +6,7 @@ editorial_id: "01"
 type: Essay
 intro: "关于个体差异、测量意义以及学会解读自身生理规律的思考。"
 permalink: /zh-cn/editorial/no-universal-baseline/
-translation_key: article_01
+translation_key: no-universal-baseline
 ---
 
 在临床生理学与公共卫生文献中，群体平均值具备明确的实用价值。它们通过成千上万受试者的统计数据确立标准化基准，为临床医生进行大规模筛查提供统一依据。然而，对于任何一个具体的个体而言，抽象的群体平均值却极少能作为准确的个人参考点。女性身体并非处于静止不变的平衡状态；它运行在一个由每月激素变化、昼夜节律调节、环境响应及身体压力构成的连续动态光谱中。
